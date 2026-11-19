@@ -22,9 +22,9 @@ B. **8**
 C. **10**  
 D. **14**
 
-**Answer:** A. **2**
+**Answer:** B. **8**
 
-**Explanation:** In binary, 12 is **1100** and 10 is **1010**. AND keeps only positions where both bits are 1, giving **1000**, which is 8. Wait, that calculation gives 8, so the correct answer is B. **8**.
+**Explanation:** In binary, 12 is **1100** and 10 is **1010**. AND keeps only positions where both bits are 1, giving **1000**, which is 8.
 
 ### 3. What is the result of **12 ^ 10**?
 
@@ -33,9 +33,9 @@ B. **6**
 C. **8**  
 D. **14**
 
-**Answer:** A. **6**
+**Answer:** B. **6**
 
-**Explanation:** In binary, **1100 ^ 1010** is **0110**, which is 6. The correct option is B. **6**.
+**Explanation:** In binary, **1100 ^ 1010** is **0110**, which is 6.
 
 ### 4. What is the result of **~5** for a Number?
 
@@ -493,3 +493,4 @@ const hasFlagFour = (flags & 4n) !== 0n;
 | Previous chapter | Chapter lesson | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [28 - Optional chaining and nullish coalescing](../lessons/28-optional-chaining-and-nullish-coalescing.md) | [Open lesson](../lessons/29-bitwise-operators-and-integer-operations.md) | [Open example](../examples/29-bitwise-operators-and-integer-operations.md) | [30 - Conditional statements](../lessons/30-conditional-statements.md) |
+
