@@ -142,7 +142,7 @@ A template literal also inserts a value into text:
 
 ~~~js
 const score = 7;
-const message = "Your score is " + score;
+const message = `Your score is ${score}`;
 
 console.log(message); // "Your score is 7"
 ~~~
