@@ -500,6 +500,7 @@ The AND result must equal the full mask for every selected bit to be present. Us
 
 ## Chapter navigation
 
-| Previous chapter | Chapter Q&A | Next chapter |
-| --- | --- | --- |
-| [28 - Optional chaining and nullish coalescing](../lessons/28-optional-chaining-and-nullish-coalescing.md) | [Open Q&A](../qnas/29-bitwise-operators-and-integer-operations.md) | [30 - Conditional statements](../lessons/30-conditional-statements.md) |
+| Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
+| --- | --- | --- | --- |
+| [28 - Optional chaining and nullish coalescing](../lessons/28-optional-chaining-and-nullish-coalescing.md) | [Open lesson](../lessons/29-bitwise-operators-and-integer-operations.md) | [Open Q&A](../qnas/29-bitwise-operators-and-integer-operations.md) | [30 - Conditional statements](../lessons/30-conditional-statements.md) |
+
