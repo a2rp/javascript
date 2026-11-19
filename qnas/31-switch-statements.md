@@ -92,24 +92,23 @@ D. The default clause runs immediately.
 
 **Explanation:** This behavior is fall-through. It can be intentional, but an accidental missing break is a common bug.
 
-### 9. Which value matches this switch input?
+### 9. What happens when the Number **2** is compared with the string case **"2"**?
 
 ~~~js
 switch (2) {
     case "2":
-        // ...
+        // This case does not match.
 }
 ~~~
 
-A. The string **"2"**  
-B. The Number **2**  
-C. Both values  
-D. Neither value
+A. The case matches because both look like 2.  
+B. The case does not match because the types differ.  
+C. Both Number and string cases run.  
+D. The switch throws a TypeError.
 
-**Answer:** B is the input type, but the case shown does not match it.
+**Answer:** B. The case does not match because the types differ.
 
-**Explanation:** The switch input is Number **2** and the case value is string **"2"**. Strict comparison means the case is not selected.
-
+**Explanation:** Switch matching uses strict equality. Number **2** and string **"2"** are different values.
 ### 10. Where do let and const declarations directly inside case clauses belong?
 
 A. Each case automatically gets its own lexical scope.  
@@ -683,3 +682,4 @@ other
 | Previous chapter | Chapter lesson | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [30 - Conditional statements](../lessons/30-conditional-statements.md) | [Open lesson](../lessons/31-switch-statements.md) | [Open example](../examples/31-switch-statements.md) | [32 - Loops and iteration statements](../lessons/32-loops-and-iteration-statements.md) |
+
