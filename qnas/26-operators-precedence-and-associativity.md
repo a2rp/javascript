@@ -37,11 +37,11 @@ D. **9**
 
 Parentheses make the addition group before the multiplication.
 
-### 4. How does **2 ** 3 ** 2** group?
+### 4. How does <code>2 ** 3 ** 2</code> group?
 
-A. **(2 ** 3) ** 2**  
-B. **2 ** (3 ** 2)**  
-C. **(2 ** 3) + 2**  
+A. <code>(2 ** 3) ** 2</code>  
+B. <code>2 ** (3 ** 2)</code>  
+C. <code>(2 ** 3) + 2</code>  
 D. The expression is invalid
 
 **Answer: B. 2 ** (3 ** 2).**
@@ -50,10 +50,10 @@ Exponentiation is right-associative.
 
 ### 5. Which expression is a syntax error?
 
-A. **(-2) ** 2**  
-B. **-(2 ** 2)**  
-C. **-2 ** 2**  
-D. **2 ** -2**
+A. <code>(-2) ** 2</code>  
+B. <code>-(2 ** 2)</code>  
+C. <code>-2 ** 2</code>  
+D. <code>2 ** -2</code>
 
 **Answer: C. -2 ** 2.**
 
@@ -382,11 +382,11 @@ Thus **10 - 3 - 2** means **(10 - 3) - 2**.
 
 For example, **a = b = 10** means **a = (b = 10)**.
 
-### 30. The expression **-2 ** 2** is valid JavaScript and evaluates to **-4**.
+### 30. The expression <code>-2 ** 2</code> is valid JavaScript and evaluates to **-4**.
 
 **Answer: False.**
 
-It is a syntax error. Write **-(2 ** 2)** to produce **-4**, or **(-2) ** 2** to produce **4**.
+It is a syntax error. Write <code>-(2 ** 2)</code> to produce **-4**, or <code>(-2) ** 2</code> to produce **4**.
 
 ### 31. The comma operator returns the first value in its expression list.
 
@@ -426,11 +426,11 @@ Associativity determines how operators with the same precedence group when they 
 
 They make intent visible, reduce mistakes during edits, and help readers understand the expression without recalling the full precedence table.
 
-### 37. How is **2 ** 3 ** 2** grouped, and what is its value?
+### 37. How is <code>2 ** 3 ** 2</code> grouped, and what is its value?
 
 **Answer:**
 
-It groups as **2 ** (3 ** 2)** because exponentiation is right-associative. Its value is **512**.
+It groups as <code>2 ** (3 ** 2)</code> because exponentiation is right-associative. Its value is **512**.
 
 ### 38. What is the difference between grouping and evaluation order?
 
@@ -470,7 +470,7 @@ Parentheses make the addition happen before multiplication.
 const result = 2 ** 3 ** 2;
 ~~~
 
-Exponentiation is right-associative, so this means **2 ** (3 ** 2)**.
+Exponentiation is right-associative, so this means <code>2 ** (3 ** 2)</code>.
 
 ### 43. Assign the value **10** to two variables using one chained assignment.
 
@@ -536,3 +536,4 @@ Subtraction is left-associative, so the result is **5**.
 | Previous chapter | Chapter lesson | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [25 - String methods and text processing](../lessons/25-string-methods-and-text-processing.md) | [Open lesson](../lessons/26-operators-precedence-and-associativity.md) | [Open example](../examples/26-operators-precedence-and-associativity.md) | [27 - Logical operators and short-circuiting](../lessons/27-logical-operators-and-short-circuiting.md) |
+

@@ -43,7 +43,7 @@ The table lists common JavaScript operators from higher precedence to lower prec
 | Bitwise XOR | **^** | Left to right |
 | Bitwise OR | **\|** | Left to right |
 | Logical AND | **&&** | Left to right |
-| Logical OR and nullish coalescing | **\|\|**, **??** | Left to right, but do not mix them with **&&** or each other without parentheses |
+| Logical OR and nullish coalescing | **\|\|**, **??** | Left to right, but parenthesize when mixing **??** with **&&** or **||** |
 | Conditional | **condition ? valueIfTrue : valueIfFalse** | Right to left |
 | Assignment | **=**, **+=**, **-=**, **\*=**, **&&=**, **\|\|=**, **??=**, and other compound assignments | Right to left |
 | Comma operator | **,** | Left to right |
@@ -58,7 +58,7 @@ Exponentiation groups from right to left:
 console.log(2 ** 3 ** 2);
 ~~~
 
-This means **2 ** (3 ** 2)** and prints **512**.
+This means <code>2 ** (3 ** 2)</code> and prints **512**.
 
 A unary expression cannot appear unparenthesized on the left side of **\*\***:
 
@@ -231,7 +231,7 @@ For each expression, write the grouping with parentheses before calculating the 
 
 1. **2 + 3 * 4**
 2. **20 / 5 * 2**
-3. **2 ** 3 ** 2**
+3. <code>2 ** 3 ** 2</code>
 4. **10 - 3 - 2**
 5. **"value: " + 2 + 3**
 6. **true || false && false**
@@ -256,3 +256,4 @@ For each expression, write the grouping with parentheses before calculating the 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [25 - String methods and text processing](25-string-methods-and-text-processing.md) | [Open Q&A](../qnas/26-operators-precedence-and-associativity.md) | [Open example](../examples/26-operators-precedence-and-associativity.md) | [27 - Logical operators and short-circuiting](27-logical-operators-and-short-circuiting.md) |
+
