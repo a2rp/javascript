@@ -365,7 +365,7 @@ The adult test is first because all adult ages also satisfy **age >= 13**. Order
 
 ~~~js
 function isActiveUser(user) {
-    return user !== null && user.isActive === true;
+    return user !== null && user !== undefined && user.isActive === true;
 }
 
 console.log(isActiveUser({ isActive: true }));
@@ -383,7 +383,7 @@ false
 
 **Explanation:**
 
-When user is null, the left side of **&&** is false. JavaScript short-circuits and does not evaluate **user.isActive**, so no property access error occurs.
+When user is null, the first check is false. When it is undefined, the second check is false. In either case JavaScript short-circuits before reading **user.isActive**, so no property access error occurs.
 
 ## Example 14: Observe short-circuit evaluation
 
@@ -617,3 +617,4 @@ The function checks invalid input first, then handles express shipping, then che
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
 | [29 - Bitwise operators and integer operations](../lessons/29-bitwise-operators-and-integer-operations.md) | [Open lesson](../lessons/30-conditional-statements.md) | [Open Q&A](../qnas/30-conditional-statements.md) | [31 - switch statements](../lessons/31-switch-statements.md) |
+
