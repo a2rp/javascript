@@ -417,7 +417,7 @@ const mask = 1;
 console.log(flags & mask === 1);
 ~~~
 
-It is evaluated as **flags & (mask === 1)**, which attempts to mix a Number with a Boolean. Parentheses make the intended check clear:
+It is evaluated as **flags & (mask === 1)**. The Boolean result is converted to a Number, so this expression returns the number **1**, not the intended Boolean comparison. Parentheses make the intended check clear:
 
 ~~~js
 console.log((flags & mask) === 1);
@@ -473,3 +473,4 @@ Use BigInt when the task requires integer bit operations on values outside the 3
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [28 - Optional chaining and nullish coalescing](28-optional-chaining-and-nullish-coalescing.md) | [Open Q&A](../qnas/29-bitwise-operators-and-integer-operations.md) | [Open example](../examples/29-bitwise-operators-and-integer-operations.md) | [30 - Conditional statements](30-conditional-statements.md) |
+
