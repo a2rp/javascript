@@ -232,7 +232,13 @@ function randomInteger(min, max) {
     throw new RangeError('Expected safe integer bounds with min <= max');
   }
 
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const range = max - min + 1;
+
+  if (!Number.isSafeInteger(range)) {
+    throw new RangeError('Expected a range within the safe integer limit');
+  }
+
+  return Math.floor(Math.random() * range) + min;
 }
 ~~~
 
@@ -355,4 +361,5 @@ Use BigInt for exact integer arithmetic beyond the safe Number range. Do not use
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [74 - JSON parsing, serialization, and data limits](74-json-parsing-serialization-and-data-limits.md) | [Open Q&A](../qnas/75-math-number-and-numeric-utilities.md) | [Open example](../examples/75-math-number-and-numeric-utilities.md) | [76 - Dates, time zones, and Temporal](76-dates-time-zones-and-temporal.md) |
+
 
