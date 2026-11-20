@@ -95,7 +95,7 @@ async function main() {
 
     // The author request needs the article result, so these steps are sequential.
     const article = await readValue("article", 5);
-    const author = await readValue("author", 5);
+    const author = await readValue(`author for ${article}`, 5);
     console.log(`sequential result: ${article}, ${author}`);
 
     await loadDashboard();
@@ -136,7 +136,7 @@ main().catch((error) => {
 async return: 42
 await order: before await -> after call -> resumed
 independent results: profile, settings
-sequential result: article, author
+sequential result: article, author for article
 loading: true
 dashboard loaded: profile, alerts
 loading: false
