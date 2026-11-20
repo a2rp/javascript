@@ -975,7 +975,7 @@ const server = createServer(async (request, response) => {
 
   try {
     pathname = decodeURIComponent(
-      new URL(request.url || "/", "http://localhost").pathname
+      (request.url || "/").split("?")[0]
     );
   } catch {
     response.writeHead(400);
@@ -1138,4 +1138,5 @@ If browser storage is unavailable or saved data is invalid, the app warns that c
 | Previous chapter | Current chapter | Next chapter |
 | --- | --- | --- |
 | [143 - Node.js project: build a command-line utility](../lessons/143-node-js-project-build-a-command-line-utility.md) | [Lesson](../lessons/144-capstone-project-plan-build-test-and-document-an-application.md) · [Q&A](../qnas/144-capstone-project-plan-build-test-and-document-an-application.md) · [Example](144-capstone-project-plan-build-test-and-document-an-application.md) | [145 - JavaScript quick reference and glossary](../lessons/145-javascript-quick-reference-and-glossary.md) |
+
 
