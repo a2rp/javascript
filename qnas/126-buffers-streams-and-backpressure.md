@@ -224,8 +224,9 @@ import { Transform } from "node:stream";
 import { pipeline } from "node:stream/promises";
 
 const uppercase = new Transform({
+  decodeStrings: false,
   transform(chunk, encoding, callback) {
-    callback(null, chunk.toString("utf8").toUpperCase());
+    callback(null, chunk.toUpperCase());
   }
 });
 
@@ -236,7 +237,7 @@ await pipeline(
 );
 ~~~
 
-**Explanation:** The source decodes UTF-8 while reading, so the Transform receives text chunks with character boundaries handled by the Readable.
+**Explanation:** The source decodes UTF-8 while reading, and decodeStrings: false keeps those chunks as strings when they reach the Transform.
 
 ### 25. Create a Readable from two application records in object mode and consume it.
 

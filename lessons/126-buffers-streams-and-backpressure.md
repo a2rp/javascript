@@ -203,8 +203,9 @@ import { Transform } from "node:stream";
 import { pipeline } from "node:stream/promises";
 
 const uppercase = new Transform({
+  decodeStrings: false,
   transform(chunk, encoding, callback) {
-    callback(null, chunk.toString("utf8").toUpperCase());
+    callback(null, chunk.toUpperCase());
   }
 });
 
@@ -215,7 +216,7 @@ await pipeline(
 );
 ~~~
 
-This example decodes the input in the Readable stream, so the Transform receives text chunks rather than arbitrary Buffer boundaries. The output is written as UTF-8 text.
+The Readable decodes UTF-8 incrementally. Setting decodeStrings to false keeps each resulting string chunk as a string when it reaches the Transform. The output is written as UTF-8 text.
 
 A production pipeline should allow errors to reach the caller:
 
