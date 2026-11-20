@@ -11,18 +11,18 @@ These methods return results instead of requiring a loop to build an output arra
 ~~~js
 const prices = [12, 18, 25];
 
-const pricesWithTax = prices.map(function (price) {
-    return price * 1.1;
+const pricesWithFee = prices.map(function (price) {
+    return price + 2;
 });
 
-console.log(pricesWithTax);
+console.log(pricesWithFee);
 console.log(prices);
 ~~~
 
 Output:
 
 ~~~text
-[ 13.200000000000001, 19.8, 27.500000000000004 ]
+[ 14, 20, 27 ]
 [ 12, 18, 25 ]
 ~~~
 
