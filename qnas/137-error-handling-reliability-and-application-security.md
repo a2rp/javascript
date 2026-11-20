@@ -374,4 +374,5 @@ await Promise.race([request, timeoutPromise]);
 
 | Previous chapter | Current chapter | Next chapter |
 | --- | --- | --- |
-| [136 - Performance measurement and optimization](136-performance-measurement-and-optimization.md) | [Lesson](../lessons/137-error-handling-reliability-and-application-security.md) · [Q&A](137-error-handling-reliability-and-application-security.md) · [Example](../examples/137-error-handling-reliability-and-application-security.md) | [138 - Dependency hygiene, lockfiles, and software supply chain](138-dependency-hygiene-lockfiles-and-software-supply-chain.md) |
+| [136 - Modular architecture and dependency boundaries](136-modular-architecture-and-dependency-boundaries.md) | [Lesson](../lessons/137-error-handling-reliability-and-application-security.md) · [Q&A](137-error-handling-reliability-and-application-security.md) · [Example](../examples/137-error-handling-reliability-and-application-security.md) | [138 - Dependency hygiene, lockfiles, and software supply chain](138-dependency-hygiene-lockfiles-and-software-supply-chain.md) |
+

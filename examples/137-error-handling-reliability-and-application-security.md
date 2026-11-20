@@ -268,4 +268,5 @@ Enter another valid ID to see **No profile was found for that ID.** An invalid I
 
 | Previous chapter | Current chapter | Next chapter |
 | --- | --- | --- |
-| [136 - Performance measurement and optimization](../lessons/136-performance-measurement-and-optimization.md) | [Lesson](../lessons/137-error-handling-reliability-and-application-security.md) · [Q&A](../qnas/137-error-handling-reliability-and-application-security.md) · [Example](137-error-handling-reliability-and-application-security.md) | [138 - Dependency hygiene, lockfiles, and software supply chain](../lessons/138-dependency-hygiene-lockfiles-and-software-supply-chain.md) |
+| [136 - Modular architecture and dependency boundaries](../lessons/136-modular-architecture-and-dependency-boundaries.md) | [Lesson](../lessons/137-error-handling-reliability-and-application-security.md) · [Q&A](../qnas/137-error-handling-reliability-and-application-security.md) · [Example](137-error-handling-reliability-and-application-security.md) | [138 - Dependency hygiene, lockfiles, and software supply chain](../lessons/138-dependency-hygiene-lockfiles-and-software-supply-chain.md) |
+
