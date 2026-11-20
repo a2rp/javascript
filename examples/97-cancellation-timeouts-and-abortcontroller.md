@@ -197,15 +197,21 @@ Both task Promises receive the same signal. Aborting the group controller reques
 
 ### Using the same idea with `fetch()`
 
-Pass the signal to fetch. Aborting the controller then requests cancellation from fetch, which rejects the request Promise if it is still pending:
+Assume the page contains a button with id `cancel-report`. Pass the signal to fetch. Clicking the button aborts the pending request, which then rejects its Promise:
 
 ```js
 const controller = new AbortController();
+const cancelButton = document.querySelector("#cancel-report");
+const requestPromise = fetch("/api/report", {
+    signal: controller.signal,
+});
+
+cancelButton.addEventListener("click", () => controller.abort(), {
+    once: true,
+});
 
 try {
-    const response = await fetch("/api/report", {
-        signal: controller.signal,
-    });
+    const response = await requestPromise;
     const report = await response.json();
     console.log(report);
 } catch (error) {
@@ -215,9 +221,6 @@ try {
         throw error;
     }
 }
-
-// Call this when the user leaves the view or the request is no longer needed.
-controller.abort();
 ```
 
 The request API must support the signal. Aborting a request also does not roll back work that a server has already completed.
