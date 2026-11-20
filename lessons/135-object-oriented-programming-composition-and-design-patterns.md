@@ -251,6 +251,16 @@ JavaScript functions can also be strategies. Use a class when the policy needs s
 A factory centralizes creation when choosing or validating a concrete type is part of the application rule. A direct **new** call is clearer when creation is simple.
 
 ~~~js
+class ConsoleNotification {
+  constructor(message) {
+    this.message = message;
+  }
+
+  send() {
+    return "Console: " + this.message;
+  }
+}
+
 function createNotification(kind, message) {
   if (kind === "email") return new EmailNotification(message, "team@example.test");
   if (kind === "console") return new ConsoleNotification(message);
@@ -335,3 +345,4 @@ For a class with many setup steps or mutable fields, reconsider its responsibili
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [134 - Functional programming: composition and purity](134-functional-programming-composition-and-purity.md) | [Open Q&A](../qnas/135-object-oriented-programming-composition-and-design-patterns.md) | [Open example](../examples/135-object-oriented-programming-composition-and-design-patterns.md) | [136 - Modular architecture and dependency boundaries](136-modular-architecture-and-dependency-boundaries.md) |
+
