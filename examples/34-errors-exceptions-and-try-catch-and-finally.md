@@ -593,23 +593,30 @@ function loadData() {
     return Promise.reject(new Error("Request failed."));
 }
 
+const pending = loadData();
+
 try {
-    loadData();
+    pending;
     console.log("The synchronous try block finished.");
 } catch (error) {
     console.log("Caught:", error.message);
 }
+
+pending.catch(function (error) {
+    console.log("Handled later:", error.message);
+});
 ~~~
 
 ### Expected output
 
 ~~~text
 The synchronous try block finished.
+Handled later: Request failed.
 ~~~
 
 ### Explanation
 
-loadData returns a Promise. Its rejection occurs asynchronously, after the synchronous try block has finished. This catch cannot handle it. To handle the rejection, await the Promise inside an async try block or attach a rejection callback. This snippet intentionally leaves the rejection unhandled, so do not use that pattern in application code.
+loadData returns a Promise. Its rejection occurs asynchronously, after the synchronous try block has finished. This catch cannot handle it. To handle the rejection, await the Promise inside an async try block or attach a rejection callback. The attached catch handles the rejection separately, after the synchronous try block has completed.
 
 ## 19. Let an awaited failure pass through finally
 
@@ -808,3 +815,4 @@ A syntax error in the current source file normally prevents that file from runni
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
 | [33 - break, continue, and labels](../lessons/33-break-continue-and-labels.md) | [Open lesson](../lessons/34-errors-exceptions-and-try-catch-and-finally.md) | [Open Q&A](../qnas/34-errors-exceptions-and-try-catch-and-finally.md) | [35 - Debugging, stack traces, and breakpoints](../lessons/35-debugging-stack-traces-and-breakpoints.md) |
+
