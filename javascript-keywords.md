@@ -162,7 +162,7 @@ JavaScript is case-sensitive. **class** is reserved, while **Class** is a differ
 
 ## Related lessons
 
-- [Identifiers, keywords, reserved words, and naming](lessons/08-identifiers-keywords-reserved-words-and-naming.md)
-- [Classic scripts, modules, and script loading](lessons/09-classic-scripts-modules-and-script-loading.md)
-- [Strict mode](lessons/13-strict-mode.md)
+- [Identifiers, keywords, reserved words, and naming](lessons/008-identifiers-keywords-reserved-words-and-naming.md)
+- [Classic scripts, modules, and script loading](lessons/009-classic-scripts-modules-and-script-loading.md)
+- [Strict mode](lessons/013-strict-mode.md)
 - [JavaScript quick reference and glossary](lessons/145-javascript-quick-reference-and-glossary.md)

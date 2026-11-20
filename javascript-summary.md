@@ -34,7 +34,7 @@ A program contains statements and expressions. An expression produces a value. A
 
 Automatic semicolon insertion is part of JavaScript parsing, but it does not make every line break safe. Write clear statements, use braces for control flow, and avoid line breaks after forms such as return when the following expression is meant to be returned.
 
-Related lessons: [engines and runtimes](lessons/03-javascript-engines-and-runtime-environments.md), [source syntax](lessons/07-source-syntax-statements-expressions-comments-and-automatic-semicolon-insertion.md).
+Related lessons: [engines and runtimes](lessons/003-javascript-engines-and-runtime-environments.md), [source syntax](lessons/007-source-syntax-statements-expressions-comments-and-automatic-semicolon-insertion.md).
 
 ## Source code, names, and modules
 
@@ -44,7 +44,7 @@ Use descriptive camelCase names for ordinary variables and functions, PascalCase
 
 JavaScript can run as a classic script or as an ECMAScript module. Modules have their own top-level scope, use import and export, and run in strict mode. Prefer modules for organized applications. Keep modules focused and make dependencies visible through imports.
 
-Related lessons: [identifiers and keywords](lessons/08-identifiers-keywords-reserved-words-and-naming.md), [scripts and modules](lessons/09-classic-scripts-modules-and-script-loading.md), [module imports and exports](lessons/81-export-and-import-forms.md).
+Related lessons: [identifiers and keywords](lessons/008-identifiers-keywords-reserved-words-and-naming.md), [scripts and modules](lessons/009-classic-scripts-modules-and-script-loading.md), [module imports and exports](lessons/081-export-and-import-forms.md).
 
 ## Bindings, scope, and values
 
@@ -66,7 +66,7 @@ JavaScript has seven primitive types:
 
 Objects are reference values. Arrays, functions, dates, maps, sets, and regular expressions are objects. Two separately created objects are different identities, even if they contain the same properties.
 
-Related lessons: [variables](lessons/10-variables-const-let-and-var.md), [scope](lessons/11-scope-global-function-and-block.md), [hoisting and the temporal dead zone](lessons/12-hoisting-and-the-temporal-dead-zone.md), [primitive values and object references](lessons/15-primitive-values-and-object-references.md).
+Related lessons: [variables](lessons/010-variables-const-let-and-var.md), [scope](lessons/011-scope-global-function-and-block.md), [hoisting and the temporal dead zone](lessons/012-hoisting-and-the-temporal-dead-zone.md), [primitive values and object references](lessons/015-primitive-values-and-object-references.md).
 
 ## Types, conversion, and comparison
 
@@ -82,7 +82,7 @@ Truthy values behave like true in conditions. Falsy values are false, 0, -0, 0n,
 
 Use || when any falsy value should trigger a fallback. Use ?? when only null or undefined should trigger it. Optional chaining, ?., stops a property access or call when the value before it is null or undefined. These operators prevent certain errors, but they do not validate data types or application rules.
 
-Related lessons: [types and conversion](lessons/14-values-types-and-dynamic-typing.md), [null and undefined](lessons/16-undefined-null-and-nan.md), [type checks](lessons/18-typeof-instanceof-and-reliable-type-checks.md), [coercion](lessons/19-type-conversion-and-coercion.md), [equality](lessons/20-equality-comparison-and-relational-operators.md).
+Related lessons: [types and conversion](lessons/014-values-types-and-dynamic-typing.md), [null and undefined](lessons/016-undefined-null-and-nan.md), [type checks](lessons/018-typeof-instanceof-and-reliable-type-checks.md), [coercion](lessons/019-type-conversion-and-coercion.md), [equality](lessons/020-equality-comparison-and-relational-operators.md).
 
 ## Expressions and control flow
 
@@ -96,7 +96,7 @@ break exits a loop or switch. continue skips to the next loop iteration. Labels 
 
 Throw Error objects when an operation fails. Use try, catch, and finally to handle failures where the program can recover, report useful context, or perform cleanup. Do not silently swallow errors.
 
-Related lessons: [operators](lessons/26-operators-precedence-and-associativity.md), [conditional statements](lessons/30-conditional-statements.md), [loops](lessons/32-loops-and-iteration-statements.md), [errors](lessons/34-errors-exceptions-and-try-catch-and-finally.md).
+Related lessons: [operators](lessons/026-operators-precedence-and-associativity.md), [conditional statements](lessons/030-conditional-statements.md), [loops](lessons/032-loops-and-iteration-statements.md), [errors](lessons/034-errors-exceptions-and-try-catch-and-finally.md).
 
 ## Functions and execution context
 
@@ -110,7 +110,7 @@ An ordinary function's this depends on how it is called. A method call such as o
 
 Recursion solves a problem by calling the same function on smaller inputs. Each call consumes call-stack space. For very deep input, prefer an iterative approach or an algorithm designed to avoid stack growth.
 
-Related lessons: [functions](lessons/36-function-declarations-and-expressions.md), [callbacks](lessons/40-callbacks-and-higher-order-functions.md), [closures](lessons/41-lexical-scope-and-closures.md), [this](lessons/42-this-and-invocation-context.md).
+Related lessons: [functions](lessons/036-function-declarations-and-expressions.md), [callbacks](lessons/040-callbacks-and-higher-order-functions.md), [closures](lessons/041-lexical-scope-and-closures.md), [this](lessons/042-this-and-invocation-context.md).
 
 ## Objects, prototypes, and classes
 
@@ -122,7 +122,7 @@ JavaScript uses prototypes for inheritance and delegation. Property lookup follo
 
 Object identity, property keys, symbols, proxies, and reflection APIs provide lower-level control. Use these features when the data model requires them, not as a default for simple objects.
 
-Related lessons: [objects](lessons/52-objects-properties-and-methods.md), [copying and identity](lessons/57-object-identity-shallow-copies-deep-copies-and-structuredclone.md), [prototypes](lessons/59-prototypes-and-the-prototype-chain.md), [classes](lessons/61-classes-fields-and-methods.md).
+Related lessons: [objects](lessons/052-objects-properties-and-methods.md), [copying and identity](lessons/057-object-identity-shallow-copies-deep-copies-and-structuredclone.md), [prototypes](lessons/059-prototypes-and-the-prototype-chain.md), [classes](lessons/061-classes-fields-and-methods.md).
 
 ## Arrays, collections, and iteration
 
@@ -134,7 +134,7 @@ Some array methods mutate the original array, including sort, splice, push, and 
 
 Set stores unique values. Map stores key-value pairs with keys of any type. WeakMap and WeakSet hold object keys weakly and are not enumerable. Iterables expose values through the iterator protocol. Generators can produce values lazily with yield. Typed arrays provide views over binary data. Shared memory and Atomics are specialized tools for worker coordination.
 
-Related lessons: [array methods](lessons/46-array-iteration-methods.md), [transforming arrays](lessons/47-transforming-arrays-map-filter-reduce-and-flat.md), [Map and Set](lessons/65-map-and-set-collections.md), [iterators and generators](lessons/68-iterables-and-the-iterator-protocol.md).
+Related lessons: [array methods](lessons/046-array-iteration-methods.md), [transforming arrays](lessons/047-transforming-arrays-map-filter-reduce-and-flat.md), [Map and Set](lessons/065-map-and-set-collections.md), [iterators and generators](lessons/068-iterables-and-the-iterator-protocol.md).
 
 ## Text, numbers, dates, and data formats
 
@@ -148,7 +148,7 @@ JSON is a text data format. JSON.parse converts valid JSON text to a JavaScript 
 
 Date represents an instant as milliseconds from the Unix epoch, while local display depends on time zones. Use Intl for locale-aware formatting. Temporal offers modern date and time types in environments that support it. For dates and times, decide whether the data means an instant, a calendar date, or a local wall-clock time.
 
-Related lessons: [strings and Unicode](lessons/23-strings-and-template-literals.md), [regular expressions](lessons/72-regular-expression-syntax.md), [JSON](lessons/74-json-parsing-serialization-and-data-limits.md), [dates and time zones](lessons/76-dates-time-zones-and-temporal.md), [internationalization](lessons/77-intl-and-locale-aware-formatting.md).
+Related lessons: [strings and Unicode](lessons/023-strings-and-template-literals.md), [regular expressions](lessons/072-regular-expression-syntax.md), [JSON](lessons/074-json-parsing-serialization-and-data-limits.md), [dates and time zones](lessons/076-dates-time-zones-and-temporal.md), [internationalization](lessons/077-intl-and-locale-aware-formatting.md).
 
 ## Asynchronous JavaScript
 
@@ -160,7 +160,7 @@ A Promise represents a result that may be available now, later, or never because
 
 async functions always return a Promise. await pauses that async function until a promise settles, without blocking unrelated runtime work. Use try and catch for asynchronous failures. Parallelize independent operations when appropriate, and sequence dependent operations. Use AbortController for APIs that support cancellation. Cancellation is cooperative: the operation must observe the signal.
 
-Related lessons: [event loop](lessons/91-the-event-loop-task-queues-and-microtasks.md), [promises](lessons/93-promises-states-chaining-and-error-handling.md), [async and await](lessons/95-async-and-await.md), [cancellation](lessons/97-cancellation-timeouts-and-abortcontroller.md).
+Related lessons: [event loop](lessons/091-the-event-loop-task-queues-and-microtasks.md), [promises](lessons/093-promises-states-chaining-and-error-handling.md), [async and await](lessons/095-async-and-await.md), [cancellation](lessons/097-cancellation-timeouts-and-abortcontroller.md).
 
 ## Modules and development tools
 
@@ -170,7 +170,7 @@ A package manager installs dependencies and runs project scripts. Keep the lockf
 
 Formatters keep style consistent. Linters catch likely mistakes and enforce conventions. JSDoc can document types and API intent in JavaScript. Bundlers and transpilers can combine files or transform syntax for compatibility. Source maps connect generated code back to source files. Polyfills supply selected APIs where older runtimes lack them. Use these tools according to the target environment rather than adding them automatically.
 
-Related lessons: [module loading](lessons/83-module-loading-resolution-and-import-maps.md), [npm and packages](lessons/84-package-json-npm-dependencies-scripts-and-package-managers.md), [bundlers and compatibility](lessons/86-transpilation-bundlers-polyfills-and-source-maps.md), [tooling](lessons/89-formatting-linting-jsdoc-and-editor-tooling.md).
+Related lessons: [module loading](lessons/083-module-loading-resolution-and-import-maps.md), [npm and packages](lessons/084-package-json-npm-dependencies-scripts-and-package-managers.md), [bundlers and compatibility](lessons/086-transpilation-bundlers-polyfills-and-source-maps.md), [tooling](lessons/089-formatting-linting-jsdoc-and-editor-tooling.md).
 
 ## JavaScript in the browser
 
@@ -188,7 +188,7 @@ Web Workers move computation away from the main thread and communicate by messag
 
 Accessibility is part of interface behavior. Preserve semantic HTML, keyboard access, visible focus, labels, and clear status announcements when JavaScript changes the page.
 
-Related lessons: [DOM basics](lessons/99-the-dom-tree-selectors-and-traversal.md), [browser events](lessons/102-browser-events-capture-bubbling-and-default-actions.md), [Fetch and HTTP](lessons/105-fetch-api-requests-responses-and-headers.md), [browser security](lessons/119-browser-security-xss-injection-and-safe-dom-updates.md), [accessibility](lessons/118-accessibility-keyboard-interaction-and-dynamic-content.md).
+Related lessons: [DOM basics](lessons/099-the-dom-tree-selectors-and-traversal.md), [browser events](lessons/102-browser-events-capture-bubbling-and-default-actions.md), [Fetch and HTTP](lessons/105-fetch-api-requests-responses-and-headers.md), [browser security](lessons/119-browser-security-xss-injection-and-safe-dom-updates.md), [accessibility](lessons/118-accessibility-keyboard-interaction-and-dynamic-content.md).
 
 ## JavaScript in Node.js
 
@@ -212,7 +212,7 @@ Security includes more than escaping HTML. Prevent injection by using safe APIs 
 
 Performance work starts with measurement. Profile CPU, memory, network, and rendering before optimizing. Reduce unnecessary work, large payloads, and long main-thread tasks. Watch for retained references and event listeners that keep unused objects alive. Use feature detection and graceful fallbacks for capabilities that may not exist in every target runtime.
 
-Related lessons: [testing](lessons/87-testing-fundamentals-assertions-and-test-design.md), [security and reliability](lessons/137-error-handling-reliability-and-application-security.md), [performance](lessons/139-performance-analysis-memory-leaks-and-optimization.md), [compatibility](lessons/140-feature-detection-compatibility-and-graceful-fallback.md).
+Related lessons: [testing](lessons/087-testing-fundamentals-assertions-and-test-design.md), [security and reliability](lessons/137-error-handling-reliability-and-application-security.md), [performance](lessons/139-performance-analysis-memory-leaks-and-optimization.md), [compatibility](lessons/140-feature-detection-compatibility-and-graceful-fallback.md).
 
 ## Problem solving and application design
 

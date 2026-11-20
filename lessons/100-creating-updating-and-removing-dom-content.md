@@ -262,4 +262,4 @@ Cloning copies the node structure and attributes, but not listeners registered w
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [99 - The DOM tree, selectors, and traversal](99-the-dom-tree-selectors-and-traversal.md) | [Open Q&A](../qnas/100-creating-updating-and-removing-dom-content.md) | [Open example](../examples/100-creating-updating-and-removing-dom-content.md) | [101 - Attributes, classes, forms, and styles from JavaScript](101-attributes-classes-forms-and-styles-from-javascript.md) |
+| [99 - The DOM tree, selectors, and traversal](099-the-dom-tree-selectors-and-traversal.md) | [Open Q&A](../qnas/100-creating-updating-and-removing-dom-content.md) | [Open example](../examples/100-creating-updating-and-removing-dom-content.md) | [101 - Attributes, classes, forms, and styles from JavaScript](101-attributes-classes-forms-and-styles-from-javascript.md) |

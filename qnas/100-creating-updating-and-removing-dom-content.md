@@ -323,4 +323,4 @@ A deep clone includes descendants. Reattach any **addEventListener()** listeners
 
 | Previous chapter | Chapter lesson | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [99 - The DOM tree, selectors, and traversal](../qnas/99-the-dom-tree-selectors-and-traversal.md) | [Open lesson](../lessons/100-creating-updating-and-removing-dom-content.md) | [Open example](../examples/100-creating-updating-and-removing-dom-content.md) | [101 - Attributes, classes, forms, and styles from JavaScript](101-attributes-classes-forms-and-styles-from-javascript.md) |
+| [99 - The DOM tree, selectors, and traversal](../qnas/099-the-dom-tree-selectors-and-traversal.md) | [Open lesson](../lessons/100-creating-updating-and-removing-dom-content.md) | [Open example](../examples/100-creating-updating-and-removing-dom-content.md) | [101 - Attributes, classes, forms, and styles from JavaScript](101-attributes-classes-forms-and-styles-from-javascript.md) |

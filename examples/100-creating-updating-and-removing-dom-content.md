@@ -217,4 +217,4 @@ The code trims the input so spaces alone do not become a task. A valid task is c
 
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
-| [99 - The DOM tree, selectors, and traversal](../examples/99-the-dom-tree-selectors-and-traversal.md) | [Open lesson](../lessons/100-creating-updating-and-removing-dom-content.md) | [Open Q&A](../qnas/100-creating-updating-and-removing-dom-content.md) | [101 - Attributes, classes, forms, and styles from JavaScript](../lessons/101-attributes-classes-forms-and-styles-from-javascript.md) |
+| [99 - The DOM tree, selectors, and traversal](../examples/099-the-dom-tree-selectors-and-traversal.md) | [Open lesson](../lessons/100-creating-updating-and-removing-dom-content.md) | [Open Q&A](../qnas/100-creating-updating-and-removing-dom-content.md) | [101 - Attributes, classes, forms, and styles from JavaScript](../lessons/101-attributes-classes-forms-and-styles-from-javascript.md) |
