@@ -1041,7 +1041,7 @@ server.listen(port, "127.0.0.1", () => {
 
 ## README.md
 
-~~~md
+~~~~md
 # Reading list
 
 A small browser application for saving books, tracking read status, searching, and filtering.
@@ -1095,7 +1095,7 @@ If browser storage is unavailable or saved data is invalid, the app warns that c
 - Concurrent browser tabs can overwrite each other's saved changes.
 - Browser storage can be cleared or unavailable.
 - The local development server is for local development, not production hosting.
-~~~
+~~~~
 
 ## Expected output
 
@@ -1138,3 +1138,4 @@ If browser storage is unavailable or saved data is invalid, the app warns that c
 | Previous chapter | Current chapter | Next chapter |
 | --- | --- | --- |
 | [143 - Node.js project: build a command-line utility](../lessons/143-node-js-project-build-a-command-line-utility.md) | [Lesson](../lessons/144-capstone-project-plan-build-test-and-document-an-application.md) · [Q&A](../qnas/144-capstone-project-plan-build-test-and-document-an-application.md) · [Example](144-capstone-project-plan-build-test-and-document-an-application.md) | [145 - JavaScript quick reference and glossary](../lessons/145-javascript-quick-reference-and-glossary.md) |
+
