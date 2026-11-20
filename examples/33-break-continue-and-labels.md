@@ -545,9 +545,9 @@ true
 
 Some returns true as soon as its callback passes for one element. It returns false if no element passes.
 
-## Example 18: Do not use a label as an arbitrary jump
+## Example 18: Use break to exit the nearest loop
 
-**Question:** Can code use break to jump to a label that is not enclosing it?
+**Question:** Which values print before an unlabelled break exits its loop?
 
 **Code:**
 
@@ -594,3 +594,4 @@ Break exits its nearest enclosing loop. A label cannot be used as a destination 
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
 | [32 - Loops and iteration statements](../lessons/32-loops-and-iteration-statements.md) | [Open lesson](../lessons/33-break-continue-and-labels.md) | [Open Q&A](../qnas/33-break-continue-and-labels.md) | [34 - Functions](../lessons/34-functions.md) |
+
