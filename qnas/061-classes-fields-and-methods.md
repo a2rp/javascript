@@ -1,4 +1,4 @@
-﻿# 61 - Classes: fields and methods: Q&A
+# 61 - Classes: fields and methods: Q&A
 
 This question set reviews class declarations, constructors, public instance fields, methods, accessors, and static methods. Answers follow each question, with explanations and code outputs where useful.
 
@@ -780,6 +780,6 @@ Before moving on, make sure you can explain:
 
 ## Chapter navigation
 
-| Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
-| --- | --- | --- | --- |
-| [60 - Constructor functions, new, and instanceof](../lessons/060-constructor-functions-new-and-instanceof.md) | [Open lesson](../lessons/061-classes-fields-and-methods.md) | [Open Q&A](../qnas/061-classes-fields-and-methods.md) | [62 - Static fields, private elements, and initialization blocks](../lessons/062-static-fields-private-elements-and-initialization-blocks.md) |
+| Previous chapter | Chapter lesson | Chapter Q&A | Chapter example | Next chapter |
+| --- | --- | --- | --- | --- |
+| [60 - Constructor functions, new, and instanceof](../lessons/060-constructor-functions-new-and-instanceof.md) | [Open lesson](../lessons/061-classes-fields-and-methods.md) | [Open Q&A](../qnas/061-classes-fields-and-methods.md) | [Open example](../examples/061-classes-fields-and-methods.md) | [62 - Static fields, private elements, and initialization blocks](../lessons/062-static-fields-private-elements-and-initialization-blocks.md) |
