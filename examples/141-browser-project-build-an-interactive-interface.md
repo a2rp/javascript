@@ -361,6 +361,14 @@ Save the following as an HTML file and open it in a browser. It is a self-contai
 
       if (refreshedCheckbox) {
         refreshedCheckbox.focus();
+      } else {
+        const selectedFilter = filterButtons.querySelector(
+          'button[data-filter="' + state.filter + '"]'
+        );
+
+        if (selectedFilter) {
+          selectedFilter.focus();
+        }
       }
     });
 
@@ -428,7 +436,7 @@ Save the following as an HTML file and open it in a browser. It is a self-contai
 
 - At first, the page shows an empty task list and the message **No tasks yet. Add one above.**
 - Submitting a non-empty task adds a row with a checkbox and a **Remove** button. The input clears, the count updates, and focus returns to the input.
-- Selecting a checkbox changes the task's completed style and updates the available filters. Focus remains on that checkbox after the list is rendered again.
+- Selecting a checkbox changes the task's completed style and updates the available filters. Focus returns to the checkbox if it remains visible. If the selected filter hides the completed task, focus moves to that filter button.
 - Selecting **All**, **Active**, or **Completed** updates the visible tasks and pressed state of the filter buttons.
 - Removing a task updates the count and moves focus to a nearby remove button. If there are no visible tasks to focus, focus returns to the input.
 - If the selected filter has no matches, the page explains that the view is empty.
@@ -442,7 +450,7 @@ Save the following as an HTML file and open it in a browser. It is a self-contai
 - **Visitor text is not parsed as markup.** The row is built with document creation methods, and task text is assigned through text content. The remove button's accessible name identifies which task it will remove.
 - **Rendering derives the page.** The render function calculates the filtered view, creates rows, updates counts and empty messages, and exposes the selected filter through the pressed state.
 - **Events are delegated.** The task list handles checkbox changes and remove clicks from its child rows. The filter group handles its buttons. These listeners are attached once to stable elements, not reattached after every render.
-- **Focus is handled after DOM replacement.** Rendering replaces list rows. The checkbox handler restores focus to the refreshed checkbox. The remove handler moves focus to a nearby remove button or back to the task input.
+- **Focus is handled after DOM replacement.** Rendering replaces list rows. The checkbox handler restores focus to the refreshed checkbox, or to the selected filter if that task is no longer visible. The remove handler moves focus to a nearby remove button or back to the task input.
 - **Status is announced politely.** The status region reports short results without taking focus. The selected filter and visible task count are also available in the page.
 - **The example has deliberate limits.** It does not save tasks between reloads, sync between tabs, or send data to a server. Those behaviors require additional storage or API design.
 
@@ -461,3 +469,4 @@ Save the following as an HTML file and open it in a browser. It is a self-contai
 | Previous chapter | Current chapter | Next chapter |
 | --- | --- | --- |
 | [140 - Feature detection, compatibility, and graceful fallback](../lessons/140-feature-detection-compatibility-and-graceful-fallback.md) | [Lesson](../lessons/141-browser-project-build-an-interactive-interface.md) · [Q&A](../qnas/141-browser-project-build-an-interactive-interface.md) · [Example](141-browser-project-build-an-interactive-interface.md) | [142 - Browser project: build an API-driven application](../lessons/142-browser-project-build-an-api-driven-application.md) |
+
