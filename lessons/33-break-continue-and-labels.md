@@ -459,4 +459,5 @@ Break and continue are statements for loops, not forEach callbacks. Use for...of
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [32 - Loops and iteration statements](32-loops-and-iteration-statements.md) | [Open Q&A](../qnas/33-break-continue-and-labels.md) | [Open example](../examples/33-break-continue-and-labels.md) | [34 - Functions](34-functions.md) |
+| [32 - Loops and iteration statements](32-loops-and-iteration-statements.md) | [Open Q&A](../qnas/33-break-continue-and-labels.md) | [Open example](../examples/33-break-continue-and-labels.md) | [34 - Errors, exceptions, and try, catch, and finally](34-errors-exceptions-and-try-catch-and-finally.md) |
+

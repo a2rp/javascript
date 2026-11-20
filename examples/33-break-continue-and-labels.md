@@ -593,5 +593,6 @@ Break exits its nearest enclosing loop. A label cannot be used as a destination 
 
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
-| [32 - Loops and iteration statements](../lessons/32-loops-and-iteration-statements.md) | [Open lesson](../lessons/33-break-continue-and-labels.md) | [Open Q&A](../qnas/33-break-continue-and-labels.md) | [34 - Functions](../lessons/34-functions.md) |
+| [32 - Loops and iteration statements](../lessons/32-loops-and-iteration-statements.md) | [Open lesson](../lessons/33-break-continue-and-labels.md) | [Open Q&A](../qnas/33-break-continue-and-labels.md) | [34 - Errors, exceptions, and try, catch, and finally](../lessons/34-errors-exceptions-and-try-catch-and-finally.md) |
+
 
