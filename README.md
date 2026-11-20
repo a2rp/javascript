@@ -4,7 +4,9 @@ These are my personal learning notes, shaped by what I study and practice. Here,
 
 The course roadmap covers the JavaScript language, browser programming, common web APIs, Node.js, tooling, testing, security, performance, and practical projects. It is organized as a step-by-step reference from first principles through advanced topics.
 
-Each lesson will have a paired Q&A and example. The links below define the planned file paths; lesson files will be added chapter by chapter.
+## Reference
+
+[JavaScript reference](javascript-reference.md)
 
 ## Lessons
 
