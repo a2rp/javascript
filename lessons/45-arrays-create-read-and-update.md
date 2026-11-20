@@ -565,7 +565,7 @@ The callback creates a new array for each position.
 ## Key points
 
 - Arrays are ordered collections indexed from zero.
-- **length** is one greater than the highest present array index, but holes mean it may not equal the number of present elements.
+- **length** tracks the array's index range and can exceed the number of present elements when there are holes or when length is set directly.
 - Bracket access reads or updates an indexed value.
 - **push**, **pop**, **shift**, **unshift**, and **splice** mutate the array.
 - **delete** leaves a hole instead of shifting elements.
