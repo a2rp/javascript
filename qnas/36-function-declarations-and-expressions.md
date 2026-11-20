@@ -454,7 +454,7 @@ showNotice();
 
 **Explanation:** showNotice is the outer binding used to call the function. displayNotice is the function expression's explicit internal name.
 
-### 38. Move the call so this function declaration runs successfully.
+### 38. Does this function declaration work when called before its source location?
 
 ~~~js
 printMessage();
@@ -464,7 +464,7 @@ function printMessage() {
 }
 ~~~
 
-**Answer:** The code already runs successfully because printMessage is a function declaration.
+**Answer:** Yes. It prints:
 
 ~~~text
 Message
@@ -533,3 +533,4 @@ Running
 | Previous chapter | Chapter lesson | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [35 - Debugging, stack traces, and breakpoints](../lessons/35-debugging-stack-traces-and-breakpoints.md) | [Open lesson](../lessons/36-function-declarations-and-expressions.md) | [Open example](../examples/36-function-declarations-and-expressions.md) | [37 - Parameters, default values, rest, and arguments](../lessons/37-parameters-default-values-rest-and-arguments.md) |
+
