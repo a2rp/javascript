@@ -388,7 +388,7 @@ self.addEventListener("fetch", (event) => {
         }
       });
 
-      window.addEventListener("controllerchange", updateControlStatus);
+
     </script>
   </body>
 </html>
