@@ -128,7 +128,7 @@ last
 
 ## Check an array's length
 
-The **length** property is one more than the highest array index that is present as an element. It is not necessarily the count of present elements when an array has holes:
+The **length** property tracks the array's index range. It is normally one greater than the highest index used, but it can be larger when an array has holes or when **length** is set directly. It is not necessarily the count of present elements:
 
 ~~~js
 const values = ["a", "b", "c"];
