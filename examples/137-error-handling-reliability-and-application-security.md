@@ -6,7 +6,7 @@ How can a browser page validate a profile ID, retry a temporary request failure 
 
 ## Complete example
 
-Save this as an HTML file and open it in a browser. The mock transport fails once for the sample profile and then succeeds. No server is required.
+Save this as an HTML file and open it in a browser. The mock transport marks one simulated network failure as retryable, then succeeds. No server is required.
 
 ~~~html
 <!doctype html>
@@ -83,7 +83,7 @@ Save this as an HTML file and open it in a browser. The mock transport fails onc
       const id = decodeURIComponent(url.split("/").pop());
       if (id === "ada" && mockFetch.firstAttempt) {
         mockFetch.firstAttempt = false;
-        throw new TypeError("Simulated temporary network failure");
+        throw new NetworkError(new Error("Simulated temporary network failure"));
       }
 
       if (id === "ada") {
@@ -107,7 +107,6 @@ Save this as an HTML file and open it in a browser. The mock transport fails onc
         );
       } catch (cause) {
         if (signal.aborted) throw new DOMException("Cancelled.", "AbortError");
-        if (cause instanceof TypeError) throw new NetworkError(cause);
         throw cause;
       }
 
@@ -248,7 +247,7 @@ Enter another valid ID to see **No profile was found for that ID.** An invalid I
 
 - **Validate at the boundary.** The ID is trimmed and restricted to a short allowlist. The server must validate independently.
 - **Classify failures.** Temporary network errors can be retried; a 404 and malformed response cannot. Stable codes drive program behavior instead of message text.
-- **Bound retries.** There are at most three attempts, with increasing delays, jitter, and cancellation. A write request also needs an idempotency strategy before retrying.
+- **Bound retries.** There are at most three attempts, with increasing delays, jitter, and cancellation. A write request also needs an idempotency strategy before retrying. Do not classify programming errors as transient network failures.
 - **Cancel stale work.** A new submission aborts the previous request. The previous catch path cannot replace the new request's UI.
 - **Check response data.** A success status does not guarantee that the response has the expected shape.
 - **Render text safely.** The profile name uses textContent, so markup-like characters are shown as text instead of parsed as HTML.
@@ -269,4 +268,5 @@ Enter another valid ID to see **No profile was found for that ID.** An invalid I
 | Previous chapter | Current chapter | Next chapter |
 | --- | --- | --- |
 | [136 - Modular architecture and dependency boundaries](../lessons/136-modular-architecture-and-dependency-boundaries.md) | [Lesson](../lessons/137-error-handling-reliability-and-application-security.md) · [Q&A](../qnas/137-error-handling-reliability-and-application-security.md) · [Example](137-error-handling-reliability-and-application-security.md) | [138 - Dependency hygiene, lockfiles, and software supply chain](../lessons/138-dependency-hygiene-lockfiles-and-software-supply-chain.md) |
+
 
