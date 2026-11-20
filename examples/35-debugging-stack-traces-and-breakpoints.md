@@ -418,6 +418,10 @@ How can you observe each item processed by this loop without pausing or adding a
 ### Code
 
 ~~~js
+function processItem(item) {
+    return item.toUpperCase();
+}
+
 const items = ["book", "pen", "bag"];
 
 for (const item of items) {
@@ -710,3 +714,4 @@ The failing property access is in readName, but the root cause is that renderGre
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
 | [34 - Errors, exceptions, and try, catch, and finally](../lessons/34-errors-exceptions-and-try-catch-and-finally.md) | [Open lesson](../lessons/35-debugging-stack-traces-and-breakpoints.md) | [Open Q&A](../qnas/35-debugging-stack-traces-and-breakpoints.md) | [36 - Function declarations and expressions](../lessons/36-function-declarations-and-expressions.md) |
+
