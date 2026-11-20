@@ -21,7 +21,7 @@ This café example keeps UTF-8 text intact.
 A slow destination can apply backpressure.
 ~~~
 
-### `stream-transform-demo/app.mjs
+### `stream-transform-demo/app.mjs`
 
 ~~~js
 import { createReadStream, createWriteStream } from "node:fs";
