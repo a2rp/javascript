@@ -344,4 +344,5 @@ Before adding a custom element, decide:
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [114 - Mutation, intersection, and resize observers](114-mutation-intersection-and-resize-observers.md) | [Open Q&A](../qnas/115-web-components-custom-elements-and-shadow-dom.md) | [Open example](../examples/115-web-components-custom-elements-and-shadow-dom.md) | [116 - Forms, validation, and accessible custom controls](116-forms-validation-and-accessible-custom-controls.md) |
+| [114 - Mutation, intersection, and resize observers](114-mutation-intersection-and-resize-observers.md) | [Open Q&A](../qnas/115-web-components-custom-elements-and-shadow-dom.md) | [Open example](../examples/115-web-components-custom-elements-and-shadow-dom.md) | [116 - WebSockets, Server-Sent Events, and real-time updates](116-websockets-server-sent-events-and-real-time-updates.md) |
+

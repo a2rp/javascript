@@ -430,4 +430,5 @@ This is a teaching component, not a complete design system. It uses numeric attr
 
 | Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
 | --- | --- | --- | --- |
-| [114 - Mutation, intersection, and resize observers](../examples/114-mutation-intersection-and-resize-observers.md) | [Open lesson](../lessons/115-web-components-custom-elements-and-shadow-dom.md) | [Open Q&A](../qnas/115-web-components-custom-elements-and-shadow-dom.md) | [116 - Forms, validation, and accessible custom controls](../lessons/116-forms-validation-and-accessible-custom-controls.md) |
+| [114 - Mutation, intersection, and resize observers](../examples/114-mutation-intersection-and-resize-observers.md) | [Open lesson](../lessons/115-web-components-custom-elements-and-shadow-dom.md) | [Open Q&A](../qnas/115-web-components-custom-elements-and-shadow-dom.md) | [116 - WebSockets, Server-Sent Events, and real-time updates](../lessons/116-websockets-server-sent-events-and-real-time-updates.md) |
+
