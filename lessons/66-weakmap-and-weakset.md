@@ -89,7 +89,7 @@ A weak collection is not a promise that a value will be collected immediately. I
 
 ## WeakMap operations
 
-A **WeakMap** supports a focused set of operations:
+A **WeakMap** supports these core operations:
 
 - **set(key, value)** adds or updates a key-value association and returns the map.
 - **get(key)** returns the associated value, or **undefined** when there is no entry.
@@ -120,6 +120,57 @@ As with **Map**, **get()** alone cannot distinguish an absent entry from an entr
 
 WeakMap keys cannot be enumerated. A **WeakMap** has no **size**, **keys()**, **values()**, **entries()**, **forEach()**, or **clear()** operation. Those omissions are intentional: if a weak collection could list all its keys, the list would expose which objects remain alive and would make behavior depend on garbage collection.
 
+## Insert a default only when a key is missing
+
+Current ECMAScript also defines **getOrInsert(key, defaultValue)** and **getOrInsertComputed(key, callback)**. They return the existing value when the key is already present. Otherwise, **getOrInsert()** stores and returns the supplied default, while **getOrInsertComputed()** calls the callback with the key, stores its result, and returns that result.
+
+These convenience methods may not be available in older JavaScript runtimes. Check support when code must run across a range of environments. The familiar **has()** and **set()** operations remain a portable fallback.
+
+~~~js
+const cache = new WeakMap();
+const node = {};
+let calculations = 0;
+
+const first = cache.getOrInsertComputed(node, (key) => {
+  calculations += 1;
+  return { label: "node metadata" };
+});
+
+const second = cache.getOrInsertComputed(node, () => {
+  calculations += 1;
+  return { label: "replacement" };
+});
+
+console.log(first.label);
+console.log(first === second);
+console.log(calculations);
+~~~
+
+Output in a runtime that supports **getOrInsertComputed()**:
+
+~~~text
+node metadata
+true
+1
+~~~
+
+**Explanation:** The first call computes and stores the value. The second call finds the existing entry, so it does not run its callback. An existing entry whose value is **undefined** still counts as present.
+
+For older runtimes, the same lazy pattern can be written with **has()** and **set()**:
+
+~~~js
+function getOrCreate(cache, key, createValue) {
+  if (cache.has(key)) {
+    return cache.get(key);
+  }
+
+  const value = createValue(key);
+  cache.set(key, value);
+  return value;
+}
+~~~
+
+The fallback invokes the callback only when the key is absent. It also handles a stored **undefined** correctly because it checks **has()** first.
 ## Associate metadata without changing the object
 
 A weak map is useful when code needs to associate data with objects it does not own or should not modify.
