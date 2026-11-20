@@ -263,4 +263,4 @@ The browser may have blocked access to the response after the server processed t
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [106 - HTTP methods, status codes, and JSON APIs](../lessons/106-http-methods-status-codes-and-json-apis.md) | [Q&A 106](106-http-methods-status-codes-and-json-apis.md) | [Example 106](../examples/106-http-methods-status-codes-and-json-apis.md) | [108 - URL, URLSearchParams, and the History API](../lessons/108-url-urlsearchparams-and-the-history-api.md) |
+| [106 - HTTP methods, status codes, and JSON APIs](../qnas/106-http-methods-status-codes-and-json-apis.md) | [Open lesson](../lessons/107-cors-credentials-and-cross-origin-rules.md) | [Open example](../examples/107-cors-credentials-and-cross-origin-rules.md) | [108 - URL, URLSearchParams, and the History API](../lessons/108-url-urlsearchparams-and-the-history-api.md) |
